@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "posts/hello-bangkok/index.html",
+    "href": "posts/hello-bangkok/index.html",
+    "title": "สวัสดี กรุงเทพ",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/hello-khonkaen/index.html",
+    "href": "posts/hello-khonkaen/index.html",
+    "title": "สวัสดี ขอนแก่น",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\nCode\nplot(iris)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "mueang",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nเมือง\n\n\nขอนแก่น\n\n\n\n\n\n\n\n\n\n\n\nMay 4, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/khonkaen/index.html",
+    "href": "posts/khonkaen/index.html",
+    "title": "ขอนแก่น",
+    "section": "",
+    "text": "Data (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright\n\n\nData (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright.\nCheck the package website, https://docs.ropensci.org/osmextract/, for more details.\n\n\n\n\nCode\n# khonkaen_bbox <- getbb(\"Khon Kaen, Thailand\")\n# mapview(khonkaen_bbox)\n\nkhonkaen_osm <- opq(\"khon kaen\") %>% \n    add_osm_feature(key = \"amenity\", value = \"restaurant\") %>%\n    add_osm_feature(key = \"amenity\", value = \"restaurant\") %>%\n    # add_osm_feature(key = 'name', value = \"Thames\", value_exact = FALSE) %>%\n    osmdata_sf()\n\nmapview(khonkaen_osm$osm_points)\n\n\n\n\n\n\n\n\nCode\n# khonkaen_bbox <- getbb(\"Khon Kaen, Thailand\")\n# osm_lines = oe_get(\"Khon Kaen\", stringsAsFactors = FALSE, quiet = TRUE)\n# osm_points = oe_get(\"khon kaen thailand\", layer = \"points\", stringsAsFactors = FALSE, quiet = TRUE)"
+  },
+  {
+    "objectID": "posts/bangkok/index.html",
+    "href": "posts/bangkok/index.html",
+    "title": "สวัสดีกรุงเทพ",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  }
+]

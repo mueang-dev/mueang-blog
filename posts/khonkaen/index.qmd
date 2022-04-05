@@ -1,0 +1,35 @@
+---
+title: "ขอนแก่น"
+date: "05/04/2022"
+categories: [เมือง, ขอนแก่น]
+---
+
+![](https://otopkkc.com/wp-content/uploads/2021/05/5825_8771.jpg)
+
+```{r}
+#| label: setup
+#| echo: FALSE
+library(mapview)
+library(osmdata)
+library(osmextract)
+```
+
+```{r}
+# khonkaen_bbox <- getbb("Khon Kaen, Thailand")
+# mapview(khonkaen_bbox)
+
+khonkaen_osm <- opq("khon kaen") %>% 
+    add_osm_feature(key = "amenity", value = "restaurant") %>%
+    add_osm_feature(key = "amenity", value = "restaurant") %>%
+    # add_osm_feature(key = 'name', value = "Thames", value_exact = FALSE) %>%
+    osmdata_sf()
+
+mapview(khonkaen_osm$osm_points)
+```
+
+
+```{r}
+# khonkaen_bbox <- getbb("Khon Kaen, Thailand")
+# osm_lines = oe_get("Khon Kaen", stringsAsFactors = FALSE, quiet = TRUE)
+# osm_points = oe_get("khon kaen thailand", layer = "points", stringsAsFactors = FALSE, quiet = TRUE)
+```
